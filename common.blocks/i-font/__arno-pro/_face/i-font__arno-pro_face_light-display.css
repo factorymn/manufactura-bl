@@ -1,0 +1,11 @@
+@font-face {
+    font-family: 'ArnoPro-LightDisplay';
+    src: url('ArnoPro-LightDisplay.eot');
+    src: url('ArnoPro-LightDisplay.eot?#iefix') format('embedded-opentype'),
+         url('ArnoPro-LightDisplay.woff') format('woff'),
+         url('ArnoPro-LightDisplay.ttf') format('truetype'),
+         url('ArnoPro-LightDisplay.svg#ArnoPro-LightDisplay') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}

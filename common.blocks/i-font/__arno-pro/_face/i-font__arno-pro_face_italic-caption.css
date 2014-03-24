@@ -1,0 +1,11 @@
+@font-face {
+    font-family: 'ArnoPro-ItalicCaption';
+    src: url('ArnoPro-ItalicCaption.eot');
+    src: url('ArnoPro-ItalicCaption.eot?#iefix') format('embedded-opentype'),
+         url('ArnoPro-ItalicCaption.woff') format('woff'),
+         url('ArnoPro-ItalicCaption.ttf') format('truetype'),
+         url('ArnoPro-ItalicCaption.svg#ArnoPro-ItalicCaption') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}

@@ -1,0 +1,10 @@
+@font-face {
+    font-family: 'Circe';
+    src: url('circe-regular_bold.eot');
+    src: url('circe-regular_bold.eot?#iefix') format('embedded-opentype'),
+         url('circe-regular_bold.woff') format('woff'),
+         url('circe-regular_bold.ttf') format('truetype'),
+         url('circe-regular_bold.svg#Circe') format('svg');
+    font-weight: bold;
+    font-style: normal;
+}

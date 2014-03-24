@@ -1,0 +1,7 @@
+@font-face {
+    font-family: 'gotham-pro';
+    src: url('gotham-pro-medium.eot');
+    src: url('gotham-pro-medium.eot?#iefix') format('embedded-opentype'), url('gotham-pro-medium.woff') format('woff'), url('gotham-pro-medium.ttf') format('truetype'), url('gotham-pro-medium.svg#gotham-pro') format('svg');
+    font-weight: 500;
+    font-style: normal;
+}
