@@ -1,0 +1,25 @@
+libs/
+!test/libs/bower.json
+node_modules/
+test/node/node_modules/
+.DS_Store
+.idea
+.project
+.svn
+
+# bem
+.bem/cache/
+*bundles*/*/*.*
+!*bundles*/*/*.bemjson.js
+!*bundles*/.bem/*
+test/*.bundles/*/*
+!test/*.bundles/*/*.bemdecl.js
+!test/*.bundles/*/*.bemjson.js
+!test/*.bundles/.bem/*
+
+# text editor
+sftp-config.json
+._*.*
+*.sublime-project
+*.sublime-workspace
+
