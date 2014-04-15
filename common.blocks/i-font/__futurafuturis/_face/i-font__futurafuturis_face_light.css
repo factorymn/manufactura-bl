@@ -1,0 +1,11 @@
+@font-face {
+    font-family: 'FuturaFuturis';
+    src: url('futurafuturis-light.eot');
+    src: url('futurafuturis-light.eot?#iefix') format('embedded-opentype'),
+         url('futurafuturis-light.woff') format('woff'),
+         url('futurafuturis-light.ttf') format('truetype'),
+         url('futurafuturis-light.svg#futurafuturislightcregular') format('svg');
+    font-weight: 200;
+    font-style: normal;
+
+}
