@@ -1,10 +1,10 @@
 @font-face {
     font-family: 'FuturaFuturis';
-    src: url('futurafuturisc-bold.eot');
-    src: url('futurafuturisc-bold.eot?#iefix') format('embedded-opentype'),
-         url('futurafuturisc-bold.woff') format('woff'),
-         url('futurafuturisc-bold.ttf') format('truetype'),
-         url('futurafuturisc-bold.svg#futurafuturiscbold') format('svg');
+    src: url('futurafuturis-bold.eot');
+    src: url('futurafuturis-bold.eot?#iefix') format('embedded-opentype'),
+         url('futurafuturis-bold.woff') format('woff'),
+         url('futurafuturis-bold.ttf') format('truetype'),
+         url('futurafuturis-bold.svg#futurafuturiscbold') format('svg');
     font-weight: bold;
     font-style: normal;
 }
