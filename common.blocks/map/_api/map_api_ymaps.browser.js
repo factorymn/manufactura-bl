@@ -20,7 +20,7 @@ provide(BEMDOM.decl(this.name, {
 
             apiScript.src = [
                 'http://api-maps.yandex.ru/2.1/?',
-                '&lang=' + this.params.lang || 'ru-RU',
+                '&lang=' + (this.params.lang || 'ru-RU'),
                 '&onload=' + apiCallback
             ].join('');
 
