@@ -9,21 +9,19 @@
     block : 'map',
     mods : { api : 'ymaps' },
     js : {
-        center : [55.76, 37.64],
-        zoom : 10 // можно не определять по умолчанию 10
-    }
-}
-```
-
-## Добавляем контролы на карту
-
-```
-{
-    block : 'map',
-    mods : { api : 'ymaps', zoomControl : true, typeSelector : true  },
-    js : {
-        center : [55.76, 37.64],
-        zoom : 10 // можно не определять по умолчанию 10
+        'lang': 'ru-RU', // можно не задавать
+        'center': [55.76, 37.64],
+        'zoom': 10, // можно не задавать
+        'geoObjects': [
+            {
+                coords : [55.8, 37.8],
+                // Можно не задвать
+                properties: {
+                    iconContent: '',
+                    hintContent: 'Тут можно написать тайтл места'
+                }
+            }
+        ]
     }
 }
 ```
