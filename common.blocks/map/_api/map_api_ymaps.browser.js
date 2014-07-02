@@ -51,6 +51,7 @@ provide(BEMDOM.decl(this.name, {
             controls: ['zoomControl', 'fullscreenControl']
         });
 
+
         // Если есть метки, то добавляем их на карту.
         if (this.params.geoObjects && this.params.geoObjects.length > 0) {
             this.params.geoObjects.forEach(function (item) {
@@ -63,6 +64,11 @@ provide(BEMDOM.decl(this.name, {
                 this._map.geoObjects.add(geoObject);
 
             }, this);
+        }
+
+        // Центруем карту так что бы влазили все добавленные объекты
+        if (this.params.setupBoundsByGeoObjects) {
+            this._map.setBounds(this._map.geoObjects.getBounds());
         }
 
         // Блок поделится информацией о том, что он инициализировал карту.
