@@ -30,7 +30,24 @@ provide(BEMDOM.decl(this.name, {
             imageUpload: params.imageUpload || '/uploader/image',
             imageGetJson: params.imageGetJson || '/uploader/images_list',
             plugins: params.plugins || [], // есть плагины ['gallery', 'image_classes']
-            buttons : params.buttons || false,
+            buttons : params.buttons || [
+                'html',
+                'formatting',
+                'bold',
+                'italic',
+                'deleted',
+                'unorderedlist',
+                'orderedlist',
+                'outdent',
+                'indent',
+                'image',
+                'video',
+                'file',
+                'table',
+                'link',
+                'alignment',
+                'horizontalrule'
+            ],
             lang: params.lang || 'ru'
         });
     }
