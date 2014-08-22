@@ -48,6 +48,7 @@ provide(BEMDOM.decl(this.name, {
                 'alignment',
                 'horizontalrule'
             ],
+            formattingTags : params.formattingTags || ['p', 'blockquote', 'pre', 'h1', 'h2', 'h3', 'h4'],
             lang: params.lang || 'ru'
         });
     }
