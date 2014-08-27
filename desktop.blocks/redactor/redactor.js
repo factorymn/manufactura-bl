@@ -26,7 +26,7 @@ provide(BEMDOM.decl(this.name, {
     },
     init : function() {
         var params = this.params;
-        this.domElem.redactor({
+        var defaultParams = {
             imageUpload: params.imageUpload || '/uploader/image',
             imageGetJson: params.imageGetJson || '/uploader/images_list',
             plugins: params.plugins || [], // есть плагины ['gallery', 'image_classes']
@@ -50,7 +50,8 @@ provide(BEMDOM.decl(this.name, {
             ],
             formattingTags : params.formattingTags || ['p', 'blockquote', 'pre', 'h1', 'h2', 'h3', 'h4'],
             lang: params.lang || 'ru'
-        });
+        };
+        this.domElem.redactor($.extend(defaultParams, params));
     }
 }));
 
