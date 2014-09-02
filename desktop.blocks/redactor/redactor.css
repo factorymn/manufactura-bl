@@ -390,8 +390,8 @@ body .redactor_air .redactor_toolbar {
   background-repeat: no-repeat;
 }
 .redactor_button_disabled {
-  filter: alpha(opacity=30);
-  -moz-opacity: 0.3;
+  /*filter: alpha(opacity=30);
+  -moz-opacity: 0.3;*/
   opacity: 0.3;
 }
 .redactor_button_disabled:hover {
@@ -721,8 +721,8 @@ body .redactor_air .redactor_toolbar {
   width: 100%;
   height: 100%;
   background-color: #000 !important;
-  filter: alpha(opacity=30);
-  -moz-opacity: 0.3;
+  /*filter: alpha(opacity=30);
+  -moz-opacity: 0.3;*/
   opacity: 0.3;
 }
 #redactor_modal {
