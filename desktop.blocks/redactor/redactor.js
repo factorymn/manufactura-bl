@@ -29,6 +29,7 @@ provide(BEMDOM.decl(this.name, {
         var defaultParams = {
             imageUpload: params.imageUpload || '/uploader/image',
             imageGetJson: params.imageGetJson || '/uploader/images_list',
+            fileUpload: params.fileUpload || '/uploader/file',
             plugins: params.plugins || [], // есть плагины ['gallery', 'image_classes']
             buttons : params.buttons || [
                 'html',
