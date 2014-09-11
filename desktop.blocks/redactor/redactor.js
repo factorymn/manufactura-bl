@@ -30,6 +30,11 @@ provide(BEMDOM.decl(this.name, {
             imageUpload: params.imageUpload || '/uploader/image',
             imageGetJson: params.imageGetJson || '/uploader/images_list',
             fileUpload: params.fileUpload || '/uploader/file',
+            fileUploadCallback: params.fileUploadCallback || function(link, json)
+            {
+                $(link).addClass('file_upload');
+                this.sync();
+            },
             plugins: params.plugins || [], // есть плагины ['gallery', 'image_classes']
             buttons : params.buttons || [
                 'html',
