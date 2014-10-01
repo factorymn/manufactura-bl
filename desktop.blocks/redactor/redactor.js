@@ -4,6 +4,8 @@
 /*borschik:include:ru.js*/;
 /*borschik:include:plugins/gallery/jquery.form.min.js*/;
 /*borschik:include:plugins/gallery/gallery.js*/;
+/*borschik:include:plugins/table/table.js*/;
+/*borschik:include:plugins/video/video.js*/;
 /*borschik:include:plugins/image_classes/image_classes.js*/
 
 /* global modules:false */
@@ -35,7 +37,7 @@ modules.define('redactor', ['i-bem__dom', 'jquery'], function(provide, BEMDOM, $
                     $(link).addClass('file_upload');
                     this.sync();
                 },
-                plugins: ['table'], // есть плагины ['gallery', 'image_classes']
+                plugins: [], // есть плагины ['gallery', 'image_classes', 'table', 'video']
                 buttons: [
                     'formatting',
                     'bold',
@@ -52,7 +54,7 @@ modules.define('redactor', ['i-bem__dom', 'jquery'], function(provide, BEMDOM, $
                     'alignment',
                     'horizontalrule'
                 ],
-                formattingTags: ['p', 'blockquote', 'pre', 'h1', 'h2', 'h3', 'h4'],
+                formatting: ['p', 'blockquote', 'pre', 'h1', 'h2', 'h3', 'h4'],
                 lang: 'ru',
                 buttonSource: true
             };
