@@ -209,7 +209,6 @@ body .redactor-box-fullscreen {
   line-height: 1;
 }
 .redactor-toolbar li a.redactor-button-disabled {
-  filter: alpha(opacity=30);
   -moz-opacity: 0.3;
   opacity: 0.3;
 }
@@ -488,7 +487,6 @@ body .redactor-box-fullscreen {
   width: 100%;
   height: 100%;
   background-color: #000 !important;
-  filter: alpha(opacity=30);
   -moz-opacity: 0.3;
   opacity: 0.3;
 }
