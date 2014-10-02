@@ -27,6 +27,13 @@ RedactorPlugins.gallery = function() {
 
             this.$editor.html(content);
 
+            this.opts.syncBeforeCallback = function(html) {
+                console.log('2');
+                var pb = '<!-- gallery($1) -->';
+                var pbRE = new RegExp('<img class="gallery" data-id="([0-9]*)" src=".*">', 'g');
+                html = html.replace(pbRE, pb);
+                return html;
+            };
             $(this.$editor).on('click', '.gallery', this.gallery.show);
 
             var button = this.button.addAfter('image', 'gallery', 'Фотогалерея');
@@ -100,16 +107,23 @@ RedactorPlugins.gallery = function() {
         },
         insert: function()
         {
-            this.modal.close();
-//            this.selection.restore();
+            this.selection.restore();
 
             var id = $('input[name="id"]','#galleryUploadForm').val();
-            var img = $('<img src="/gallery.jpg" />').data('id', id);
-            img = '<img class="gallery" data-id="' + id + '" src="/gallery.jpg" />';
-            console.log(img);
-            this.insert.set(img);
+            if (id > 0) {
+                var img = '<img class="gallery" data-id="' + id + '" src="/gallery.jpg" />';
+                var pb = '<img class="gallery" data-id="$1" src="/gallery.jpg" />';
+                var pbRE = new RegExp('<!-- gallery.([0-9]*). -->', 'g');
+                var content = this.code.get().replace(pbRE, pb);
+                if (content.indexOf('<!-- gallery(' + id + ') -->') == -1) {
+                    // TODO допилить с тем, чтоб он вставлялся в позицию курсора
+                    this.$editor.html(content + img);
+                    this.code.sync();
+                }
+            }
+            this.modal.close();
 
-            this.code.sync();
+
         },
         setGallery: function(data) {
             var html =  $('.photoBlock', '#redactor-modal-body').html();
