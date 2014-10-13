@@ -28,7 +28,6 @@ RedactorPlugins.gallery = function() {
             this.$editor.html(content);
 
             this.opts.syncBeforeCallback = function(html) {
-                console.log('2');
                 var pb = '<!-- gallery($1) -->';
                 var pbRE = new RegExp('<img class="gallery" data-id="([0-9]*)" src=".*">', 'g');
                 html = html.replace(pbRE, pb);
