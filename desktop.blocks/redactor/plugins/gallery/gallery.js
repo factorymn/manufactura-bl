@@ -21,7 +21,7 @@ RedactorPlugins.gallery = function() {
         },
         init: function()
         {
-            var pb = '<img class="gallery" data-id="$1" src="/bem/gallery.png" />';
+            var pb = '<img class="gallery" data-id="$1" src="/static/i/redactor/gallery.png" />';
             var pbRE = new RegExp('<!-- gallery.([0-9]*). -->', 'g');
             var content = this.code.get().replace(pbRE, pb);
 
@@ -110,8 +110,8 @@ RedactorPlugins.gallery = function() {
 
             var id = $('input[name="id"]','#galleryUploadForm').val();
             if (id > 0) {
-                var img = '<img class="gallery" data-id="' + id + '" src="/bem/gallery.png" />';
-                var pb = '<img class="gallery" data-id="$1" src="/bem/gallery.png" />';
+                var img = '<img class="gallery" data-id="' + id + '" src="/static/i/redactor/gallery.png" />';
+                var pb = '<img class="gallery" data-id="$1" src="/static/i/redactor/gallery.png" />';
                 var pbRE = new RegExp('<!-- gallery.([0-9]*). -->', 'g');
                 var content = this.code.get().replace(pbRE, pb);
                 if (content.indexOf('<!-- gallery(' + id + ') -->') == -1) {
