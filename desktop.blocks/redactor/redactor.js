@@ -34,7 +34,12 @@ modules.define('redactor', ['i-bem__dom', 'jquery'], function(provide, BEMDOM, $
                 fileUpload: '/uploader/file',
                 fileUploadCallback: function(link, json)
                 {
+                    var type = json.filelink.split('.').slice(-1)[0];
+                    $(link).attr('title', type);
                     $(link).addClass('file_upload');
+                    if ($(link).html() == 'undefined') {
+                        $(link).html('File')
+                    };
                     this.sync();
                 },
                 plugins: [], // есть плагины ['gallery', 'image_classes', 'table', 'video']
