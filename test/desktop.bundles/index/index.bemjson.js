@@ -1,5 +1,5 @@
 ({
-    block: 'page',
+    block : 'page',
     title : 'index',
     head : [
         { elem : 'css', url : '_index.css' }
