@@ -1,25 +1,46 @@
+### OS X ###
+.DS_Store
+.AppleDouble
+.LSOverride
+.idea
+.project
+.keep
+.git
+
 libs/
-!test/libs/bower.json
 node_modules/
-test/node/node_modules/
 .DS_Store
 .idea
 .project
 .svn
 
-# bem
+### Sublime Text ###
+# workspace files are user-specific
+*.sublime-workspace
+*.sublime-project
+
+
+### Thumbnails ###
+._*
+
+### Node ###
+node_modules
+npm-debug.log
+
+###  Project ###
+public/freeze
+logs/*
+
+### BEM ###
 .bem/cache/
-*bundles*/*/*.*
-!*bundles*/*/*.bemjson.js
-!*bundles*/.bem/*
+.enb/tmp/
+src/libs/*
+.bem/cache/
+*bundles/*/*.*
+!*bundles/*/*.bemdecl.js
+!*bundles/*/*.bemjson.js
+!*bundles/.bem/*
 test/*.bundles/*/*
-!test/*.bundles/*/*.bemdecl.js
 !test/*.bundles/*/*.bemjson.js
 !test/*.bundles/.bem/*
-
-# text editor
-sftp-config.json
-._*.*
-*.sublime-project
-*.sublime-workspace
 
