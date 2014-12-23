@@ -29,6 +29,7 @@
     "enb-stylus": "1.1.5",
     "stylus": "^0.47.1",
     "ym": "^0.1.0",
+    "csscomb": "~2.0.5",
     "jscs": "1.5.3",
     "jshint": "2.3.0",
     "jshint-groups": "0.6.0"
@@ -38,7 +39,7 @@
     "deps": "bower-npm-install --non-interactive",
     "start": "node bemserver",
     "clean": "bem make -m clean",
-    "lint": "jshint-groups && jscs ."
+    "lint": "jshint-groups && jscs . && csscomb -vl ."
   },
   "private": true
 }
