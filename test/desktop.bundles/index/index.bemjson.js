@@ -6,11 +6,6 @@
     ],
     scripts : [{ elem : 'js', url : '_index.js' }],
     content : [
-       {
-           block : 'content',
-           content : [
-               'block content'
-           ]
-       }
+
     ]
 })
