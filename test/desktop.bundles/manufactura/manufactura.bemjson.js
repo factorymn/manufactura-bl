@@ -1,12 +1,11 @@
 ({
-    block: 'page',
-    title: 'manufactura',
-    head: [
-        { elem: 'css', url: '_manufactura.css', ie: false },
-        { elem: 'css', url: '_manufactura.ie.css', ie: 'IE' }
+    block : 'page',
+    title : 'manufactura',
+    head : [
+        { elem : 'css', url : '_manufactura.css' }
     ],
-    scripts: [{ elem: 'js', url: '_manufactura.js' }],
-    content: [
+    scripts : [{ elem: 'js', url : '_manufactura.js' }],
+    content : [
        {
             block : 'manufactura'
        }
