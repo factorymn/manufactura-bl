@@ -12,4 +12,6 @@ block('manufactura')(
     content()(function() {
         return this.ctx.content || 'Сделано в «Мануфактуре»'
     })
-);
+)
+
+
