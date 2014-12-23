@@ -5,8 +5,8 @@ block('manufactura')(
         return this.extend(applyNext(), {
             href : this.ctx.url || 'http://factory.mn/',
             title : this.ctx.title || 'Мануфактура',
-            alt : this.ctx.title || 'Мануфактура',
-            target: '_blank'
+            alt: this.ctx.title || 'Мануфактура',
+            target : '_blank'
         });
     }),
     content()(function() {
