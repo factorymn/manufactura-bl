@@ -32,13 +32,15 @@
     "jscs": "1.5.3",
     "jshint": "2.3.0",
     "jshint-groups": "0.6.0",
+    "csscomb": "~2.0.5",
     "git-hooks": "0.0.10"
   },
   "scripts": {
     "postinstall": "bower-npm-install --non-interactive",
     "deps": "bower-npm-install --non-interactive",
     "start": "node bemserver",
-    "clean": "bem make -m clean"
+    "clean": "bem make -m clean",
+    "lint": "jshint-groups && jscs . && csscomb -vl ."
   },
   "private": true
 }
