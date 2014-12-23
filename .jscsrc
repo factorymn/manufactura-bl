@@ -12,6 +12,7 @@
         "public/**",
         "spec/**",
         "tmp/**",
+        "test/"
         "node_modules/**"
     ],
     "fileExtensions": [".js", ".bemtree", ".bemhtml"],

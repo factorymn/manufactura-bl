@@ -87,6 +87,7 @@ module.exports = {
             excludes : [
                 '.bem/cache/**',
                 'libs/**',
+                'test/**',
                 'node_modules/**'
             ]
         }
