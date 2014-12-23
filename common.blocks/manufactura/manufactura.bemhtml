@@ -7,9 +7,9 @@ block('manufactura')(
             title : this.ctx.title || 'Мануфактура',
             alt : this.ctx.title || 'Мануфактура',
             target : '_blank'
-        })
+        });
     }),
     content()(function() {
-        return this.ctx.content || 'Сделано в «Мануфактуре»'
+        return this.ctx.content || 'Сделано в «Мануфактуре»';
     })
-)
+);

@@ -1,0 +1,14 @@
+{
+  "name": "manufactura-bl",
+  "version": "0.0.0",
+  "description": "manufactura-bl",
+  "bugs": "https://bitbucket.org/manufactura/manufactura-bl/issues",
+  "ignore": [
+    ".bem/cache",
+    "node_modules",
+    "libs"
+  ],
+  "dependencies": {
+    "bem-components": "v2"
+  }
+}
