@@ -33,7 +33,7 @@
     "jshint": "2.3.0",
     "jshint-groups": "0.6.0",
     "csscomb": "~2.0.5",
-    "git-hooks": "0.0.10"
+    "git-hooks": "~0.0.6"
   },
   "scripts": {
     "postinstall": "bower-npm-install --non-interactive",
