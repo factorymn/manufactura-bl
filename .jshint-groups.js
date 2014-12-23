@@ -88,7 +88,8 @@ module.exports = {
                 '.bem/cache/**',
                 'libs/**',
                 'test/**',
-                'node_modules/**'
+                'node_modules/**',
+                'desktop.blocks/redactor/plugins/'
             ]
         }
     }

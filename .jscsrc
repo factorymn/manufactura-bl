@@ -1,18 +1,11 @@
 {
     "excludeFiles": [
         ".bem/cache/**",
+        ".enb/tmp/**",
         ".git/**",
         "**.bundles/**",
-        "**/*.i18n/**",
+        "test/",
         "libs/**",
-        "app/**",
-        "config/**",
-        "db/**",
-        "log/**",
-        "public/**",
-        "spec/**",
-        "tmp/**",
-        "test/"
         "node_modules/**"
     ],
     "fileExtensions": [".js", ".bemtree", ".bemhtml"],
