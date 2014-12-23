@@ -14,7 +14,7 @@ function cleanup {
     fi
     exit $exit_code
 }
-
+echo 'sdfsf'
 trap cleanup EXIT SIGINT SIGHUP
 
 # Cancel any changes to the working tree that are not going to be committed
