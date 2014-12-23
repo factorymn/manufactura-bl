@@ -8,7 +8,6 @@ var PRJ_ROOT = environ.PRJ_ROOT;
 var PRJ_TECHS = PATH.resolve(PRJ_ROOT, '.bem/techs');
 var BEMCORE_TECHS = environ.getLibPath('bem-core', '.bem/techs');
 
-
 exports.getTechs = function() {
     var techs = {
         'stylus'        : 'v2/styl.js',

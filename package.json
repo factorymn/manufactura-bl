@@ -31,15 +31,14 @@
     "ym": "^0.1.0",
     "jscs": "1.5.3",
     "jshint": "2.3.0",
-    "jshint-groups": "0.6.0",
-    "csscomb": "~2.0.5"
+    "jshint-groups": "0.6.0"
   },
   "scripts": {
     "postinstall": "bower-npm-install --non-interactive",
     "deps": "bower-npm-install --non-interactive",
     "start": "node bemserver",
     "clean": "bem make -m clean",
-    "lint": "jshint-groups && jscs . && csscomb -vl ."
+    "lint": "jshint-groups && jscs ."
   },
   "private": true
 }

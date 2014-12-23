@@ -4,12 +4,12 @@ block('manufactura')(
     attrs()(function() {
         return this.extend(applyNext(), {
             href : this.ctx.url || 'http://factory.mn/',
-            title: this.ctx.title || 'Мануфактура',
-            alt: this.ctx.title || 'Мануфактура',
-            target: '_blank'
+            title : this.ctx.title || 'Мануфактура',
+            alt : this.ctx.title || 'Мануфактура',
+            target : '_blank'
         });
     }),
-    content()(function () {
+    content()(function() {
         return this.ctx.content || 'Сделано в «Мануфактуре»';
     })
-)
+);

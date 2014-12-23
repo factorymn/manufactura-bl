@@ -27,13 +27,15 @@ module.exports = {
             },
             includes : ['*.blocks/**/*.js'],
             excludes : [
-                '**/*.i18n/*.js',
                 '**/*.bem/*.js',
                 '**/_*.js',
                 '**/*.bh.js',
                 '**/*.spec.js',
                 '**/*.deps.js',
-                '**/*.bemjson.js'
+                '**/*.bemjson.js',
+                'desktop.blocks/redactor/plugins/**',
+                'desktop.blocks/redactor/ru.js',
+                'desktop.blocks/redactor/redactor.min.js'
             ]
         },
 
@@ -86,10 +88,10 @@ module.exports = {
             includes : ['**/.bem/**/*.js'],
             excludes : [
                 '.bem/cache/**',
+                '.bem/**',
                 'libs/**',
                 'test/**',
-                'node_modules/**',
-                'desktop.blocks/redactor/plugins/'
+                'node_modules/**'
             ]
         }
     }

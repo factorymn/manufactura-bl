@@ -6,7 +6,8 @@
         "**.bundles/**",
         "test/",
         "libs/**",
-        "node_modules/**"
+        "node_modules/**",
+        "./desktop.blocks/redactor/"
     ],
     "fileExtensions": [".js", ".bemtree", ".bemhtml"],
     "requireSpaceAfterKeywords": ["do", "else"],

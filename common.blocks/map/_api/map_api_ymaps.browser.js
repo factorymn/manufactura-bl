@@ -1,4 +1,4 @@
-modules.define('map', ['i-bem__dom', 'jquery'], function (provide, BEMDOM, $) {
+modules.define('map', ['i-bem__dom', 'jquery'], function(provide, BEMDOM, $) {
     provide(BEMDOM.decl({ block : 'map', modName : 'api', modVal : 'ymaps' }, {
         onSetMod : {
             'js' : function() {
@@ -8,13 +8,13 @@ modules.define('map', ['i-bem__dom', 'jquery'], function (provide, BEMDOM, $) {
         /**
          * Загрузчик API.
          */
-        loadMapsApi: function () {
-            if (!window.ymaps) {
+        loadMapsApi : function() {
+            if(!window.ymaps) {
 
                 var apiScript = document.createElement('script'),
                     apiCallback = 'ymapsloaded';
 
-                window[apiCallback] = $.proxy(function () {
+                window[apiCallback] = $.proxy(function() {
                     this.onAPILoaded();
                 }, this);
 
@@ -33,28 +33,28 @@ modules.define('map', ['i-bem__dom', 'jquery'], function (provide, BEMDOM, $) {
         /**
          * Выполнится после загрузки API.
          */
-        onAPILoaded: function () {
+        onAPILoaded : function() {
             // Запускаем инициализацию карты.
             this.initMap();
         },
         /**
          * Инициализация карты.
          */
-        initMap: function () {
+        initMap : function() {
+            var ymaps = window.ymaps;
             var center = (!!this.params.center[0]) ? this.params.center : [51.661535, 39.200287],
                 zoom = this.params.zoom || 10;
 
             this._map = new ymaps.Map(this.domElem[0], {
-                center: center,
-                zoom: zoom,
-                behaviors: ['drag', 'dblClickZoom', 'scrollZoom'],
-                controls: []
+                center : center,
+                zoom : zoom,
+                behaviors : ['drag', 'dblClickZoom'],
+                controls : []
             });
 
-
             // Если есть метки, то добавляем их на карту.
-            if (this.params.geoObjects && this.params.geoObjects.length > 0) {
-                this.params.geoObjects.forEach(function (item) {
+            if(this.params.geoObjects && this.params.geoObjects.length > 0) {
+                this.params.geoObjects.forEach(function(item) {
 
                     var geoObject;
 
@@ -67,7 +67,7 @@ modules.define('map', ['i-bem__dom', 'jquery'], function (provide, BEMDOM, $) {
             }
 
             // Центруем карту так что бы влазили все добавленные объекты
-            if (this.params.setupBoundsByGeoObjects) {
+            if(this.params.setupBoundsByGeoObjects) {
                 this._map.setBounds(this._map.geoObjects.getBounds());
             }
 
@@ -81,9 +81,9 @@ modules.define('map', ['i-bem__dom', 'jquery'], function (provide, BEMDOM, $) {
         /**
          * @return {Map | Null} Экземпляр карты, либо null, если карта не инстанцирована.
          */
-        getMap: function () {
+        getMap : function() {
             return this._map || null;
         }
 
-    }))
+    }));
 });

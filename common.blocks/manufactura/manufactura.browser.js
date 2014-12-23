@@ -11,6 +11,4 @@ modules.define('manufactura', ['i-bem__dom', 'control'], function(provide, BEMDO
         }
     }));
 
-
 });
-

@@ -1,11 +1,11 @@
 //TODO: Завернуть плагины в модульную систему.
 
-/*borschik:include:redactor.min.js*/;
-/*borschik:include:ru.js*/;
-/*borschik:include:plugins/gallery/jquery.form.min.js*/;
-/*borschik:include:plugins/gallery/gallery.js*/;
-/*borschik:include:plugins/table/table.js*/;
-/*borschik:include:plugins/video/video.js*/;
+/*borschik:include:redactor.min.js*/
+/*borschik:include:ru.js*/
+/*borschik:include:plugins/gallery/jquery.form.min.js*/
+/*borschik:include:plugins/gallery/gallery.js*/
+/*borschik:include:plugins/table/table.js*/
+/*borschik:include:plugins/video/video.js*/
 /*borschik:include:plugins/image_classes/image_classes.js*/
 
 /* global modules:false */
@@ -18,7 +18,7 @@ modules.define('redactor', ['i-bem__dom', 'jquery'], function(provide, BEMDOM, $
                 'inited' : function() {
                     this.init();
                     window.RedactorPlugins.advanced = {
-                        init: function ()
+                        init : function()
                         {
                             // this.buttonRemove('gallery');
                         }
@@ -29,21 +29,21 @@ modules.define('redactor', ['i-bem__dom', 'jquery'], function(provide, BEMDOM, $
         init : function() {
             var params = this.params;
             var defaultParams = {
-                imageUpload: '/uploader/image',
-                imageGetJson: '/uploader/images_list',
-                fileUpload: '/uploader/file',
-                fileUploadCallback: function(link, json)
+                imageUpload : '/uploader/image',
+                imageGetJson : '/uploader/images_list',
+                fileUpload : '/uploader/file',
+                fileUploadCallback : function(link, json)
                 {
                     var type = json.filelink.split('.').slice(-1)[0];
                     $(link).attr('title', type);
                     $(link).addClass('file_upload');
-                    if ($(link).html() == 'undefined') {
-                        $(link).html('File')
-                    };
+                    if($(link).html() === 'undefined') {
+                        $(link).html('File');
+                    }
                     this.sync();
                 },
-                plugins: [], // есть плагины ['gallery', 'image_classes', 'table', 'video']
-                buttons: [
+                plugins : [], // есть плагины ['gallery', 'image_classes', 'table', 'video']
+                buttons : [
                     'formatting',
                     'bold',
                     'italic',
@@ -59,13 +59,13 @@ modules.define('redactor', ['i-bem__dom', 'jquery'], function(provide, BEMDOM, $
                     'alignment',
                     'horizontalrule'
                 ],
-                formatting: ['p', 'blockquote', 'pre', 'h1', 'h2', 'h3', 'h4'],
-                lang: 'ru',
-                buttonSource: true
+                formatting : ['p', 'blockquote', 'pre', 'h1', 'h2', 'h3', 'h4'],
+                lang : 'ru',
+                buttonSource : true
             };
 
-            for (var prop in params) {
-                if (prop != 'uniqId') {
+            for(var prop in params) {
+                if(prop !== 'uniqId') {
                     defaultParams[prop] = params[prop];
                 }
             }

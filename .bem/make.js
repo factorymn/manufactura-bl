@@ -11,16 +11,16 @@ MAKE.decl('Arch', {
 
     blocksLevelsRegexp : /^.+?\.blocks/,
     bundlesLevelsRegexp : /^.+?\.bundles$/,
-    getBundlesLevels: function() {
+    getBundlesLevels : function() {
         return [
             'test/desktop.bundles'
         ];
     },
     // Оптимизирует скорость сборки за счет кеша библиотек
-    getLevelCachePolicy: function() {
+    getLevelCachePolicy : function() {
         return {
-            cache: false,
-            except: [
+            cache : false,
+            except : [
                 'bem-core',
                 'bem-components'
             ]
@@ -28,7 +28,6 @@ MAKE.decl('Arch', {
     }
 
 });
-
 
 MAKE.decl('BundleNode', {
 
@@ -84,8 +83,7 @@ MAKE.decl('BundleNode', {
         if(this.ctx.arch.hasNode(source)) {
             return this.createAutoprefixerNode(tech, this.ctx.arch.getNode(source), bundleNode, magicNode);
         }
-    },
-
+    }
 
     // собираем bemtree через borschik
     // 'create-bemtree-optimizer-node' : function(tech, bundleNode, magicNode) {

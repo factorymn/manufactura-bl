@@ -3,6 +3,7 @@ body .redactor_toolbar li a.redactor_btn_gallery {
 }
 .redactor_box img.gallery {
     display: block;
+
     width: 100%;
     margin-top: 10px;
 }
