@@ -13,6 +13,7 @@ block('button').mod('type', 'put')(
             attrs : {
                 method : 'post',
                 action : this.ctx.action,
+                enctype : this.ctx.enctype,
                 style : 'display: inline-block;'
             },
             content : [
@@ -20,7 +21,7 @@ block('button').mod('type', 'put')(
                     tag : 'input',
                     attrs : { type : 'hidden', name : '_method', value : 'put' }
                 },
-                this.ctx.token && {
+                (!!this.ctx.token) && {
                     tag : 'input',
                     attrs : { type : 'hidden', name : 'authenticity_token', value : this.ctx.token }
                 },
