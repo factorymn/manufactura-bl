@@ -1,4 +1,3 @@
-(function ($) {
 $.Redactor.opts.langs['ru'] = {
 	html: 'Код',
 	video: 'Видео',
@@ -72,4 +71,3 @@ $.Redactor.opts.langs['ru'] = {
 	edit: 'Ред.',
 	center: 'По центру'
 };
-})( jQuery );

@@ -1,12 +1,4 @@
-//TODO: Завернуть плагины в модульную систему.
-
-/*borschik:include:redactor.min.js*/
-/*borschik:include:ru.js*/
-/*borschik:include:plugins/gallery/jquery.form.min.js*/
-/*borschik:include:plugins/gallery/gallery.js*/
-/*borschik:include:plugins/table/table.js*/
-/*borschik:include:plugins/video/video.js*/
-/*borschik:include:plugins/image_classes/image_classes.js*/
+//TODO: Плагины пока подключаются на уровне проекта
 
 /* global modules:false */
 
