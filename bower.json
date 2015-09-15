@@ -1,6 +1,6 @@
 {
   "name": "manufactura-bl",
-  "version": "0.1.2",
+  "version": "0.1.5",
   "description": "manufactura-bl",
   "bugs": "https://bitbucket.org/manufactura/manufactura-bl/issues",
   "ignore": [
@@ -9,6 +9,6 @@
     "libs"
   ],
   "dependencies": {
-    "bem-components": "2.1.1"
+    "bem-components": "2.1.0"
   }
 }
